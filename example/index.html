@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <link href="cookiez.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="cookie-warning">
+    <div class="cookie-warning-inner">
+      <p class="cookie-warning-text"></p>
+      <button class="cookie-warning-close">OK</button>
+    </div>
+  </div>
+
+  <script src="../src/jquery.cookie-z.min.js"></script>
+  <script>
+    $('.cookie-warning').cookiez();
+  </script>
+</body>
+
+</html>
