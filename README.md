@@ -1,7 +1,7 @@
 # cookie-z
 A jquery plugin that shows a GDPR compliant cookie warning according to the language set on the users device.
 ## Setting up cookie-z
-1. Import the [jQuery library](https://www.google.com "jQuery's CDN Page")
+1. Import the [jQuery library](https://code.jquery.com/ "jQuery's CDN Page")
 2. Load the cookie-z script in your HTML after the body
 ```html
 <script type="text/javascript" src="jquery.cookie-z.min.js"></script>
