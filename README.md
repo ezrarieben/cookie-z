@@ -11,7 +11,7 @@ A jquery plugin that shows a GDPR compliant cookie warning according to the lang
 <div class="cookie-warning">
   <div class="cookie-warning-inner">
     <p class="cookie-warning-text"></p>
-    <button class="cookie-warning-close">OK</button>
+    <button class="cookie-warning-close"></button>
   </div>
 </div>
 ```
@@ -41,8 +41,8 @@ $('.cookie-warning').cookiez();
 | `animation`                | Change the animation of toggling the cookie warning (`slide` or `fade`)   | `slide`       | `string`  |
 | `fadeTime`                 | Speed of the fade animation (in miliseconds)                              | `350`         | `integer` |
 | `cookieConfName`           | Name of the cookie to set when the user has confirmed         | `cookie-warning-confirmed`| `string`  |
-| `customLanguages.[locale].cookieWarning`| Cookie warning text for a custom language                    | `(check src)` | `string`  |
-| `customLanguages.[locale].btnClose`   | Confirm button Text for a custom language                      | `(check src)` | `string`  |
+| `customLanguages.[locale].cookieWarning`| Cookie warning text for a custom language (v1.1.0 supports HTML)    | `null` | `string`  |
+| `customLanguages.[locale].btnClose`   | Confirm button Text for a custom language (v1.1.0 supports HTML)      | `null` | `string`  |
 | `elements.selectors.wrapper`| Selector for the cookie warning wrapper                              | `.cookie-warning` | `string`  |
 | `elements.selectors.text`  | Selector for the element to place the warning into               | `.cookie-warning-text` | `string`  |
 | `elements.selectors.btnClose` | Selector for the element the user clicks on to confirm       | `.cookie-warning-close` | `string`  |

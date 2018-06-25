@@ -80,11 +80,11 @@
         toggleWarning() {
           if (this.getCookie(settings.cookieConfName) === '') {
             if(settings.customLanguages.hasOwnProperty(this.getLang())){
-              $(settings.elements.selectors.wrapper).find(settings.elements.selectors.text).text(settings.customLanguages[this.getLang()].cookieWarning);
-              $(settings.elements.selectors.wrapper).find(settings.elements.selectors.btnClose).text(settings.customLanguages[this.getLang()].btnClose);
+              $(settings.elements.selectors.wrapper).find(settings.elements.selectors.text).html(settings.customLanguages[this.getLang()].cookieWarning);
+              $(settings.elements.selectors.wrapper).find(settings.elements.selectors.btnClose).html(settings.customLanguages[this.getLang()].btnClose);
             } else {
-              $(settings.elements.selectors.wrapper).find(settings.elements.selectors.text).text(settings.i18n[this.getLang()].cookieWarning);
-              $(settings.elements.selectors.wrapper).find(settings.elements.selectors.btnClose).text(settings.i18n[this.getLang()].btnClose);
+              $(settings.elements.selectors.wrapper).find(settings.elements.selectors.text).html(settings.i18n[this.getLang()].cookieWarning);
+              $(settings.elements.selectors.wrapper).find(settings.elements.selectors.btnClose).html(settings.i18n[this.getLang()].btnClose);
             }
 
             if (settings.animation === 'slide') {
