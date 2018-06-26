@@ -53,7 +53,7 @@
 
       var settings = $.extend({}, this.defaultOptions, options);
       var functions = {
-        getCookie(cookieName) {
+        getCookie: function(cookieName){
           var name = cookieName + "=";
           var decodedCookie = decodeURIComponent(document.cookie);
           var cookieArray = decodedCookie.split(';');
@@ -68,7 +68,7 @@
           }
           return "";
         },
-        getLang() {
+        getLang: function(){
           var userLocale = navigator.language || navigator.userLanguage;
           var userLanguage = userLocale.split('-')[0];
           if ((settings.i18n.hasOwnProperty(userLanguage) || settings.customLanguages.hasOwnProperty(userLanguage)) && settings.autoLang) {
@@ -77,7 +77,7 @@
             return settings.defaultLang;
           }
         },
-        toggleWarning() {
+        toggleWarning: function() {
           if (this.getCookie(settings.cookieConfName) === '') {
             if(settings.customLanguages.hasOwnProperty(this.getLang())){
               $(settings.elements.selectors.wrapper).find(settings.elements.selectors.text).html(settings.customLanguages[this.getLang()].cookieWarning);
@@ -94,7 +94,7 @@
             }
           }
         },
-        confirmWarning() {
+        confirmWarning: function() {
           if (this.getCookie(settings.cookieConfName) === '') {
             document.cookie = settings.cookieConfName + "=true; path=/";
             if (settings.animation === 'slide') {
