@@ -62,3 +62,6 @@ $('.cookie-warning').cookiez();
     });
 ```
 > **NOTE:** the locale of the language in this example is `fb`. After defining the custom language, you can use it as a default language with the `defaultLang` option.
+---
+[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com)
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://forthebadge.com)
