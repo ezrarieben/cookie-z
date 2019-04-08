@@ -52,7 +52,7 @@ $('.cookie-warning').cookiez();
 1. English
 2. German
 ### Adding your own language
-1. When calling the cookie-z plugin add the `cutomLanguages` JSON Array to the parameters as follows:
+1. When calling the cookie-z plugin add the `customLanguages` JSON Array to the parameters as follows:
 ```javascript
   $('.cookie-warning').cookiez({
       customLanguages: {
