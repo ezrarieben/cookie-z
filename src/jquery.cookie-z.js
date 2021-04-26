@@ -100,7 +100,7 @@
             if (settings.animation === 'slide') {
               $(settings.elements.selectors.wrapper).slideToggle();
             } else if (settings.animation === 'fade') {
-              $(settings.elements.selectors.wrapper).fadeIn(settings.fadeTime);
+              $(settings.elements.selectors.wrapper).fadeOut(settings.fadeTime);
             }
           }
         }
