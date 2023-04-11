@@ -38,7 +38,11 @@
           de: {
             cookieWarning: "Um unsere Webseite für Sie optimal gestalten zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer Datenschutzerklärung.",
             btnClose: "OK",
-          }
+          },
+          oc: {
+            cookieWarning: "Per vos donar la melhora experiéncia possibla, aqueste site web utiliza de cookies. En tampant aqueste messatge, acceptatz que de cookies sián gardats sus vòstre ordenador (levat que los ajatz desactivats) en acòrdi amb la politica de confidencialitat.",
+            btnClose: "D'acòrdi",
+          }		
         },
         elements: {
           selectors: {
